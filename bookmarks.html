@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bookmarks — Somoy Time</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header kept same as main -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./">Somoy Time</a>
+    </div>
+  </header>
+  <main class="container main">
+    <h1>Saved for later</h1>
+    <div id="bmList" class="list-rows"></div>
+  </main>
+  <script>
+    function renderBM(){
+      const list=JSON.parse(localStorage.getItem('somoy_bookmarks')||'[]');
+      const el=document.getElementById('bmList');
+      if(!list.length){ el.innerHTML='<p>No bookmarks yet.</p>'; return; }
+      el.innerHTML = list.map(b=>`<a class="latest-item" href="${b.url}">${b.title}</a>`).join('');
+    }
+    renderBM();
+  </script>
+</body>
+</html>

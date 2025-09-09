@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"
+     crossorigin="anonymous"></script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>খবর — সময় টাইম</title>
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>window.API_URL = "https://script.google.com/macros/s/AKfycbxkMGLm--5BQgQCFvG40Qs5d2NShHtc9N6LXQuB7o1IVBFZlllNqvjxcXijusWfpVQw/exec";</script>
+</head>
+<body class="detail">
+<header class="site-header">
+  <div class="container header-row">
+    
+<a class="brand" href="./">
+  <div class="logo">
+    <div class="watch">
+      <div class="hand hour" id="hour"></div>
+      <div class="hand minute" id="minute"></div>
+      <div class="hand second" id="second"></div>
+      <div class="center"></div>
+      <!-- 12 ticks -->
+      <div class="tick" style="transform:translateX(-50%) rotate(0deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(30deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(60deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(90deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(120deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(150deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(180deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(210deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(240deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(270deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(300deg);"></div>
+      <div class="tick" style="transform:translateX(-50%) rotate(330deg);"></div>
+    </div>
+    <div class="brand-text">সময় টাইম</div>
+  </div>
+</a>
+
+    <div class="actions">
+      <button id="toggleTheme" title="Dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <article id="article" itemscope itemtype="https://schema.org/NewsArticle">
+    <h1 id="title" itemprop="headline">লোড হচ্ছে…</h1>
+    <div class="meta"><span id="cat"></span> • <time id="time" itemprop="datePublished"></time> • <span id="author" itemprop="author"></span></div>
+    <img id="hero" class="hero" alt="" itemprop="image">
+    <p id="summary" class="summary" itemprop="description"></p>
+    <div id="body" class="body" itemprop="articleBody"></div>
+  
+  <!-- Article Enhancements -->
+  <div class="article-enhance">
+    <div id="readingTime" class="reading-time"></div>
+    <div id="quickFacts" class="quick-facts" style="display:none"></div>
+    <div class="tts-controls">
+      <button id="ttsPlay">🔊 Play</button>
+      <button id="ttsPause">⏸ Pause</button>
+      <label>Speed <input id="ttsSpeed" type="range" min="0.6" max="2" step="0.1" value="1"></label>
+    </div>
+    <div class="reactions">
+      <button class="react" data-react="like">👍 <span class="count">0</span></button>
+      <button class="react" data-react="love">❤️ <span class="count">0</span></button>
+      <button class="react" data-react="angry">😡 <span class="count">0</span></button>
+      <button class="react" data-react="sad">😢 <span class="count">0</span></button>
+    </div>
+    <div class="next-prev-preview" id="nextPrevPreview"></div>
+    <!-- Ad placeholder (hidden until adsense active) -->
+    <div class="ad-placeholder" aria-hidden="true" data-ad-slot="inarticle" style="display:none"></div>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="container below" style="margin:20px 0; text-align:center;"> 
+  <a href="index.html">← হোমপেজে ফিরে যান</a>
+</div>
+</footer>
+
+<script src="assets/js/news.js"></script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}</script>
+</body>
+</html>
